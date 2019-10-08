@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_anak"
+    android:id="@+id/rootLayout"
+    tools:context=".HomeActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="S I L O N A"
+            android:textSize="38dp"
+            android:fontFamily="@font/hangyaboly"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="A N A K"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_anak_app"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="SISTEM MONITORING LOKASI ANAK MENGGUNAKAN TEKNOLOGI GPS TRACKING BERBASIS ANDROID"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/hangyaboly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@id/line3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/button">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/tentang"
+                android:layout_width="50dp"
+                android:onClick="goToTentang"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:src="@drawable/ic_info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/bantuan"
+                android:layout_width="50dp"
+                android:onClick="goToBantuan"
+                android:layout_height="50dp"
+
+                android:background="@drawable/button_background"
+                android:src="@drawable/ic_live_help" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_above="@id/txt_anak_app"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_daftar_background"
+            android:fontFamily="@font/hangyaboly"
+            android:onClick="goToMasuk"
+            android:text="MASUK"
+            android:textAlignment="center"
+            android:textColor="@color/text" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

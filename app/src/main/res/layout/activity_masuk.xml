@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text"
+    tools:context=".MasukActivity">
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:text="Masuk"
+        android:fontFamily="@font/hangyaboly"
+        android:textSize="32dp"
+        android:textStyle="bold"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="74dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/form_email"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#ffffff"
+            android:layout_marginBottom="439dp">
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:hint="Masukkan Email"
+                android:textColorHint="#ffffff"
+                android:fontFamily="@font/hangyaboly"
+                android:textColor="@android:color/white"
+                android:textSize="22dp"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="317dp"
+        android:layout_height="235dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/form_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/hangyaboly"
+            app:passwordToggleDrawable="@drawable/icon_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorVisible"
+
+            >
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Kata Sandi"
+                android:fontFamily="@font/hangyaboly"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="22dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_daftar_background"
+            android:onClick="LoginUser"
+            android:text="MASUK"
+            android:textSize="18dp"
+            android:fontFamily="@font/hangyaboly"
+            android:textColor="@color/text" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/line"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnDaftar"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/hangyaboly"
+                android:text="Belum Punya Akun ?"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_daftar_background"
+                android:fontFamily="@font/hangyaboly"
+                android:text="Daftar"
+                android:textColor="@color/text" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

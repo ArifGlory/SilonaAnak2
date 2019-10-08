@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Bantuan">
+
+    <RelativeLayout
+        android:id="@+id/baratas"
+        android:background="@color/text"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/silona"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/button_background"
+            android:src="@drawable/ic_live_help" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="@font/hangyaboly"
+            android:text="Bantuan SILONA"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baratas"
+        android:layout_marginTop="48dp"
+        android:gravity="left"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_live_help" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:textColor="@color/text"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:text="Menu Bantuan, pengguna dapat mengetahui cara pengguna dan fungsi dari setiap menu yang tersedia di dalam aplikasi. " />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innerContainer"
+        android:layout_marginTop="25dp"
+        android:gravity="left"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_info" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/icon2"
+            android:textColor="@color/text"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:text="Menu Tentang, pengguna dapat melihat informasi tentang aplikasi dan nama pembuat. " />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerContainer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innerContainer2"
+        android:layout_marginTop="25dp"
+        android:gravity="left"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <TextView
+            android:id="@+id/icon3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="Daftar"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:background="@drawable/btn_daftar_background"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/icon3"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:text="Menu Daftar, pengguna dapat membuat akun dengan cara mengisi data diri. " />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerContainer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innerContainer3"
+        android:layout_marginTop="25dp"
+        android:gravity="left"
+        tools:layout_editor_absoluteX="-5dp">
+
+        <TextView
+            android:id="@+id/icon4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="Masuk"
+            android:gravity="center"
+            android:textColor="@color/text"
+            android:background="@drawable/btn_daftar_background"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/icon4"
+            android:fontFamily="@font/hangyaboly"
+            android:textSize="17dp"
+            android:textColor="@color/text"
+            android:text="Menu Masuk, pengguna dapat masuk dengan akun yang sudah terdaftar pada aplikasi. " />
+    </RelativeLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/bantuan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:onClick="goToHome"
+        android:layout_below="@+id/innerContainer4"
+        android:background="@drawable/background_teks"
+        android:src="@drawable/ic_back" />
+</RelativeLayout>

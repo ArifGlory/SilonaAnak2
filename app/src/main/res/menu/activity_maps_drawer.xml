@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/b_lokasi"
+            android:title="Berbagi Lokasi"
+            android:icon="@drawable/ic_location_on_black_24dp"/>
+        <item
+            android:id="@+id/bb_lokasi"
+            android:title="Berhenti Berbagi Lokasi"
+            android:icon="@drawable/ic_location_off_black_24dp"/>
+
+        <item
+            android:id="@+id/change_avatar"
+            android:title="Ganti Avatar"
+            android:icon="@drawable/ic_account_circle_black_24dp"/>
+
+        <item
+            android:id="@+id/bantuan"
+            android:title="Bantuan"
+            android:icon="@drawable/ic_live_help"/>
+
+        <item
+            android:id="@+id/exit"
+            android:title="Keluar"
+            android:icon="@drawable/logout"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeAvatarActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/relaToolbar"
+        android:padding="10dp"
+        android:elevation="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ganti Avatar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relaToolbar"
+        android:id="@+id/line"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfPict"
+            android:src="@drawable/ic_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="VectorDrawableCompat" />
+        <TextView
+            android:id="@+id/tvFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:text="Ketuk gambar untuk memilih avatar baru"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Perubahan"
+            android:layout_marginHorizontal="15dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnKirim"
+            android:textStyle="bold"
+            android:background="@color/primary"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:drawableTint="@color/white"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
